@@ -1,0 +1,3007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PrimeP - Premium Perfume & Bag Collection From Around The Globe">
+    <meta name="keywords" content="premium perfume, luxury bags, designer fragrance, handbags, global collection">
+    <meta name="author" content="PrimeP">
+    <title>PrimeP - Premium Perfume & Bag Collection</title>
+    <link rel="stylesheet" href="primeP.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="loading">
+    <div id="loading-screen">
+        <div class="loader-logo">PrimeP</div>
+        <div class="loader-bar">
+            <div class="loader-fill"></div>
+        </div>
+        <p class="loader-text">Curating Excellence From Around The World</p>
+    </div>
+
+    <header id="header">
+        <div class="announcement-bar">
+            <div class="announcement-content">
+                <span class="announcement-text">Free Worldwide Shipping on Orders Over $200</span>
+                <span class="announcement-separator">|</span>
+                <span class="announcement-text">Complimentary Gift Wrapping</span>
+                <span class="announcement-separator">|</span>
+                <span class="announcement-text">Loyalty Rewards Available</span>
+            </div>
+            <div class="announcement-content scroll-2">
+                <span class="announcement-text">Free Worldwide Shipping on Orders Over $200</span>
+                <span class="announcement-separator">|</span>
+                <span class="announcement-text">Complimentary Gift Wrapping</span>
+                <span class="announcement-separator">|</span>
+                <span class="announcement-text">Loyalty Rewards Available</span>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <button class="hamburger" id="hamburger" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links" id="navLinks">
+                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#collections" class="nav-link">Collections <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#perfumes"><i class="fas fa-spray-can"></i> Fine Perfumes</a></li>
+                                <li><a href="#bags"><i class="fas fa-shopping-bag"></i> Premium Bags</a></li>
+                                <li><a href="#limited"><i class="fas fa-gem"></i> Limited Edition</a></li>
+                                <li><a href="#gifts"><i class="fas fa-gift"></i> Gift Sets</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#global" class="nav-link">Global</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-logo">
+                    <a href="#home">
+                        <span class="logo-text">Prime<span class="logo-accent">P</span></span>
+                        <span class="logo-tagline">Luxury Curated</span>
+                    </a>
+                </div>
+                <div class="nav-right">
+                    <button class="nav-icon-btn" id="searchToggle" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="nav-icon-btn cart-btn" id="cartToggle" aria-label="Cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="search-bar" id="searchBar">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="searchInput" placeholder="Search perfumes, bags, collections..." autocomplete="off">
+                <button id="searchClose" aria-label="Close Search"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-bg parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?q=80&w=2070&auto=format&fit=crop');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <span class="hero-subtitle">Est. 2024</span>
+            <h1 class="hero-title">Where Elegance<br>Meets The <span class="gold-text">World</span></h1>
+            <p class="hero-desc">Discover our curated collection of premium perfumes and luxury handbags sourced from the finest artisans across the globe. Each piece tells a story of craftsmanship, heritage, and timeless beauty.</p>
+            <div class="hero-buttons">
+                <a href="#collections" class="btn btn-primary">Explore Collection <i class="fas fa-arrow-right"></i></a>
+                <a href="#about" class="btn btn-secondary">Our Story <i class="fas fa-book-open"></i></a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Countries Sourced</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5000">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="200">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Premium Products</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <div class="section-bg" style="background-image: url('https://images.unsplash.com/photo-1601924582970-9238bcb495d9?q=80&w=2070&auto=format&fit=crop');"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our Heritage</span>
+                <h2 class="section-title">The <span class="gold-text">PrimeP</span> Legacy</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-gem divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <p class="about-paragraph">Founded in 2024, PrimeP emerged from a passion for the extraordinary. We believed that true luxury knows no borders — that the finest perfumes from the south of France deserve to stand alongside the most exquisite handbags crafted in the ateliers of Milan.</p>
+                    <p class="about-paragraph">Our team of dedicated curators travels across continents, building relationships with master perfumers, artisan leatherworkers, and family-owned ateliers who have spent generations perfecting their craft. We bring their masterpieces to your doorstep, ensuring every product you receive carries the weight of tradition and the spark of innovation.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-certificate"></i>
+                            <span>100% Authentic Products</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-truck"></i>
+                            <span>Global Free Shipping</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-undo-alt"></i>
+                            <span>30-Day Returns</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Sustainable Packaging</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal">
+                    <div class="about-img-frame">
+                        <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=1974&auto=format&fit=crop" alt="Luxury Perfume and Bag Collection" loading="lazy">
+                        <div class="about-img-badge">
+                            <span class="badge-year">Since 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="collections" class="collections section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Curated Excellence</span>
+                <h2 class="section-title">Our <span class="gold-text">Collections</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-gem divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="section-desc">Discover handpicked selections from the world's most distinguished creators</p>
+            </div>
+            <div class="collection-categories reveal">
+                <div class="category-card" data-category="perfume">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?q=80&w=2070&auto=format&fit=crop" alt="Fine Perfumes Collection" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Fine Perfumes</h3>
+                            <p>From Grasse to Paris</p>
+                            <a href="#perfumes" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="bag">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1935&auto=format&fit=crop" alt="Premium Bags Collection" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Premium Bags</h3>
+                            <p>From Milan to Florence</p>
+                            <a href="#bags" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="limited">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1518894781321-630e638d0742?q=80&w=2048&auto=format&fit=crop" alt="Limited Edition" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Limited Edition</h3>
+                            <p>Exclusive Drops</p>
+                            <a href="#limited" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="gifts">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop" alt="Gift Sets" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Gift Sets</h3>
+                            <p>Thoughtfully Curated</p>
+                            <a href="#gifts" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="perfumes" class="products section">
+        <div class="section-bg parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?q=80&w=2070&auto=format&fit=crop');"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Scented Elegance</span>
+                <h2 class="section-title">Fine <span class="gold-text">Perfumes</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-spray-can divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="filter-bar reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="floral">Floral</button>
+                <button class="filter-btn" data-filter="woody">Woody</button>
+                <button class="filter-btn" data-filter="oriental">Oriental</button>
+                <button class="filter-btn" data-filter="fresh">Fresh</button>
+                <button class="filter-btn" data-filter="niche">Niche</button>
+            </div>
+            <div class="products-grid reveal" id="perfumesGrid">
+                <div class="product-card" data-category="floral" data-country="france">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?q=80&w=2070&auto=format&fit=crop" alt="Parisian Bloom Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p1"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p1"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> France
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Maison de Luxe</span>
+                        <h3 class="product-name">Parisian Bloom</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(246)</span>
+                        </div>
+                        <p class="product-desc">A delicate floral bouquet with notes of rose, jasmine, and lily of the valley.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$245</span>
+                            <button class="btn btn-add-cart" data-id="p1" data-name="Parisian Bloom" data-price="245" data-image="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?q=80&w=2070&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="woody" data-country="italy">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1619994380355-1a42106b1f2b?q=80&w=1974&auto=format&fit=crop" alt="Tuscan Cedar Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p2"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p2"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">New</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Italy
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Artisan Scents</span>
+                        <h3 class="product-name">Tuscan Cedar</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(189)</span>
+                        </div>
+                        <p class="product-desc">Warm cedarwood blended with amber and a hint of Mediterranean citrus.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$289</span>
+                            <button class="btn btn-add-cart" data-id="p2" data-name="Tuscan Cedar" data-price="289" data-image="https://images.unsplash.com/photo-1619994380355-1a42106b1f2b?q=80&w=1974&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="oriental" data-country="uae">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?q=80&w=1974&auto=format&fit=crop" alt="Dubai Oud Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p3"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p3"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge premium">Premium</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> UAE
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Arabian Nights</span>
+                        <h3 class="product-name">Dubai Oud</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(312)</span>
+                        </div>
+                        <p class="product-desc">Rich agarwood oud with saffron, rose, and dark musk undertones.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$420</span>
+                            <button class="btn btn-add-cart" data-id="p3" data-name="Dubai Oud" data-price="420" data-image="https://images.unsplash.com/photo-1587017539504-67cfbddac569?q=80&w=1974&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="fresh" data-country="japan">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=2070&auto=format&fit=crop" alt="Kyoto Rain Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p4"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p4"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Japan
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Zen Fragrances</span>
+                        <h3 class="product-name">Kyoto Rain</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(175)</span>
+                        </div>
+                        <p class="product-desc">Crisp green tea, bamboo, and aquatic notes inspired by Japanese gardens.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$198</span>
+                            <button class="btn btn-add-cart" data-id="p4" data-name="Kyoto Rain" data-price="198" data-image="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=2070&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="floral" data-country="turkey">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=2070&auto=format&fit=crop" alt="Istanbul Rose Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p5"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p5"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Turkey
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Ottoman Essence</span>
+                        <h3 class="product-name">Istanbul Rose</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(203)</span>
+                        </div>
+                        <p class="product-desc">Turkish rose absolute with saffron, patchouli, and vanilla base notes.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$275</span>
+                            <button class="btn btn-add-cart" data-id="p5" data-name="Istanbul Rose" data-price="275" data-image="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=2070&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="niche" data-country="uk">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1563826909-bb25c2973d8e?q=80&w=2073&auto=format&fit=crop" alt="London Fog Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p6"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p6"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">Limited</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> United Kingdom
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">British Aroma</span>
+                        <h3 class="product-name">London Fog</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(156)</span>
+                        </div>
+                        <p class="product-desc">Earl Grey tea, bergamot, and smoky notes evoking London's misty mornings.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$235</span>
+                            <button class="btn btn-add-cart" data-id="p6" data-name="London Fog" data-price="235" data-image="https://images.unsplash.com/photo-1563826909-bb25c2973d8e?q=80&w=2073&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="woody" data-country="usa">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1615467906845-abf2d0e0f71c?q=80&w=1974&auto=format&fit=crop" alt="Sierra Pine Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p7"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p7"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> USA
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Wild Frontier</span>
+                        <h3 class="product-name">Sierra Pine</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(134)</span>
+                        </div>
+                        <p class="product-desc">Pine needle, cedar bark, and wild sage capturing the American wilderness.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$185</span>
+                            <button class="btn btn-add-cart" data-id="p7" data-name="Sierra Pine" data-price="185" data-image="https://images.unsplash.com/photo-1615467906845-abf2d0e0f71c?q=80&w=1974&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="oriental" data-country="india">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1572635148818-9506d482bf5e?q=80&w=1935&auto=format&fit=crop" alt="Mumbai Spice Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p8"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p8"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> India
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Spice Route</span>
+                        <h3 class="product-name">Mumbai Spice</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(221)</span>
+                        </div>
+                        <p class="product-desc">Cardamom, cinnamon, clove, and sandalwood on a bed of amber.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$198</span>
+                            <button class="btn btn-add-cart" data-id="p8" data-name="Mumbai Spice" data-price="198" data-image="https://images.unsplash.com/photo-1572635148818-9506d482bf5e?q=80&w=1935&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="fresh" data-country="australia">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1600612253971-422e7f7faeb6?q=80&w=1936&auto=format&fit=crop" alt="Sydney Coast Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p9"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p9"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Australia
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Coastal Scents</span>
+                        <h3 class="product-name">Sydney Coast</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(167)</span>
+                        </div>
+                        <p class="product-desc">Sea salt, lime, eucalyptus, and driftwood for a coastal breeze.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$175</span>
+                            <button class="btn btn-add-cart" data-id="p9" data-name="Sydney Coast" data-price="175" data-image="https://images.unsplash.com/photo-1600612253971-422e7f7faeb6?q=80&w=1936&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="floral" data-country="morocco">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?q=80&w=2076&auto=format&fit=crop" alt="Marrakech Jasmine Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p10"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p10"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">Premium</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Morocco
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Atlas Aromas</span>
+                        <h3 class="product-name">Marrakech Jasmine</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(198)</span>
+                        </div>
+                        <p class="product-desc">Moroccan jasmine with orange blossom, honey, and warm spices.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$325</span>
+                            <button class="btn btn-add-cart" data-id="p10" data-name="Marrakech Jasmine" data-price="325" data-image="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?q=80&w=2076&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="niche" data-country="france">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?q=80&w=1974&auto=format&fit=crop" alt="Grasse Lavender Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p11"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p11"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> France
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Provence Parfum</span>
+                        <h3 class="product-name">Grasse Lavender</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(143)</span>
+                        </div>
+                        <p class="product-desc">French lavender absolute with rosemary, thyme, and light musk.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$265</span>
+                            <button class="btn btn-add-cart" data-id="p11" data-name="Grasse Lavender" data-price="265" data-image="https://images.unsplash.com/photo-1587017539504-67cfbddac569?q=80&w=1974&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="oriental" data-country="egypt">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1572635148818-9506d482bf5e?q=80&w=1935&auto=format&fit=crop" alt="Cairo Musk Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p12"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p12"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Egypt
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Pharaoh Scents</span>
+                        <h3 class="product-name">Cairo Musk</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(189)</span>
+                        </div>
+                        <p class="product-desc">White musk with amber, myrrh, and a touch of Egyptian lotus.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$290</span>
+                            <button class="btn btn-add-cart" data-id="p12" data-name="Cairo Musk" data-price="290" data-image="https://images.unsplash.com/photo-1572635148818-9506d482bf5e?q=80&w=1935&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="fresh" data-country="greece">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=2070&auto=format&fit=crop" alt="Santorini Breeze Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p13"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p13"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">New</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Greece
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Aegean Essence</span>
+                        <h3 class="product-name">Santorini Breeze</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(88)</span>
+                        </div>
+                        <p class="product-desc">Sea spray, white flowers, olive blossom, and sun-warmed citrus.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$195</span>
+                            <button class="btn btn-add-cart" data-id="p13" data-name="Santorini Breeze" data-price="195" data-image="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=2070&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="woody" data-country="russia">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1615467906845-abf2d0e0f71c?q=80&w=1974&auto=format&fit=crop" alt="Moscow Winter Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p14"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p14"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Russia
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Tsar Aromas</span>
+                        <h3 class="product-name">Moscow Winter</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(156)</span>
+                        </div>
+                        <p class="product-desc">Birch tar, frozen pine, black tea, and smoked leather.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$215</span>
+                            <button class="btn btn-add-cart" data-id="p14" data-name="Moscow Winter" data-price="215" data-image="https://images.unsplash.com/photo-1615467906845-abf2d0e0f71c?q=80&w=1974&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="niche" data-country="italy">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1563826909-bb25c2973d8e?q=80&w=2073&auto=format&fit=crop" alt="Venice Carnival Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p15"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p15"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge premium">Premium</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Italy
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Venetian Masks</span>
+                        <h3 class="product-name">Venice Carnival</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(134)</span>
+                        </div>
+                        <p class="product-desc">Masquerade ball blend of tuberose, cognac, and aged leather.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$380</span>
+                            <button class="btn btn-add-cart" data-id="p15" data-name="Venice Carnival" data-price="380" data-image="https://images.unsplash.com/photo-1563826909-bb25c2973d8e?q=80&w=2073&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="floral" data-country="netherlands">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=2070&auto=format&fit=crop" alt="Amsterdam Tulip Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p16"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p16"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Netherlands
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Dutch Fields</span>
+                        <h3 class="product-name">Amsterdam Tulip</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(112)</span>
+                        </div>
+                        <p class="product-desc">Dutch tulip, hyacinth, fresh soil, and green stem accord.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$175</span>
+                            <button class="btn btn-add-cart" data-id="p16" data-name="Amsterdam Tulip" data-price="175" data-image="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=2070&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="oriental" data-country="china">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?q=80&w=1974&auto=format&fit=crop" alt="Shanghai Silk Perfume" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="p17"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="p17"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> China
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Silk Road</span>
+                        <h3 class="product-name">Shanghai Silk</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(167)</span>
+                        </div>
+                        <p class="product-desc">Osmanthus, peony, silk accord, and warm musk base.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$230</span>
+                            <button class="btn btn-add-cart" data-id="p17" data-name="Shanghai Silk" data-price="230" data-image="https://images.unsplash.com/photo-1587017539504-67cfbddac569?q=80&w=1974&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta reveal">
+                <a href="#!" class="btn btn-primary view-all-btn">View All Perfumes <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gifts" class="products section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Thoughtfully Curated</span>
+                <h2 class="section-title">Gift <span class="gold-text">Sets</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-gift divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="products-grid reveal" id="giftsGrid">
+                <div class="product-card" data-category="gift" data-country="france">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop" alt="Parisian Morning Gift Set" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="g1"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="g1"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> France
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">PrimeP Curated</span>
+                        <h3 class="product-name">Parisian Morning Set</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(234)</span>
+                        </div>
+                        <p class="product-desc">Parisian Bloom perfume, silk scarf, and French lavender sachet in a keepsake box.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$420</span>
+                            <button class="btn btn-add-cart" data-id="g1" data-name="Parisian Morning Set" data-price="420" data-image="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="gift" data-country="italy">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop" alt="Italian Elegance Set" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="g2"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="g2"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">New</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Italy
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">PrimeP Curated</span>
+                        <h3 class="product-name">Italian Elegance Set</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(156)</span>
+                        </div>
+                        <p class="product-desc">Tuscan Cedar perfume, Italian leather cardholder, and Murano glass bottle.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$560</span>
+                            <button class="btn btn-add-cart" data-id="g2" data-name="Italian Elegance Set" data-price="560" data-image="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="gift" data-country="uae">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop" alt="Arabian Treasure Set" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="g3"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="g3"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge premium">Premium</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> UAE
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">PrimeP Curated</span>
+                        <h3 class="product-name">Arabian Treasure Set</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(312)</span>
+                        </div>
+                        <p class="product-desc">Dubai Oud perfume, gold-dipped perfume bottle, and Arabian silk pouch.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$890</span>
+                            <button class="btn btn-add-cart" data-id="g3" data-name="Arabian Treasure Set" data-price="890" data-image="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="gift" data-country="japan">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop" alt="Zen Harmony Set" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="g4"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="g4"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Japan
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">PrimeP Curated</span>
+                        <h3 class="product-name">Zen Harmony Set</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(178)</span>
+                        </div>
+                        <p class="product-desc">Kyoto Rain perfume, ceramic diffuser, matcha tea set, and silk fan.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$380</span>
+                            <button class="btn btn-add-cart" data-id="g4" data-name="Zen Harmony Set" data-price="380" data-image="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="gift" data-country="morocco">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop" alt="Marrakech Nights Set" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="g5"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="g5"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">Limited</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Morocco
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">PrimeP Curated</span>
+                        <h3 class="product-name">Marrakech Nights Set</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <p class="product-desc">Marrakech Jasmine perfume, brass tea set, and handwoven textile.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$520</span>
+                            <button class="btn btn-add-cart" data-id="g5" data-name="Marrakech Nights Set" data-price="520" data-image="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="gift" data-country="india">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop" alt="Royal Spice Set" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="g6"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="g6"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> India
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">PrimeP Curated</span>
+                        <h3 class="product-name">Royal Spice Set</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(145)</span>
+                        </div>
+                        <p class="product-desc">Mumbai Spice perfume, pashmina shawl, and carved sandalwood box.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$460</span>
+                            <button class="btn btn-add-cart" data-id="g6" data-name="Royal Spice Set" data-price="460" data-image="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bags" class="products section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Artisan Craftsmanship</span>
+                <h2 class="section-title">Premium <span class="gold-text">Bags</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-shopping-bag divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="filter-bar reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tote">Tote Bags</button>
+                <button class="filter-btn" data-filter="crossbody">Crossbody</button>
+                <button class="filter-btn" data-filter="clutch">Clutches</button>
+                <button class="filter-btn" data-filter="backpack">Backpacks</button>
+                <button class="filter-btn" data-filter="shoulder">Shoulder Bags</button>
+            </div>
+            <div class="products-grid reveal" id="bagsGrid">
+                <div class="product-card" data-category="tote" data-country="italy">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1935&auto=format&fit=crop" alt="Milan Leather Tote" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b1"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b1"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Italy
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Milano Atelier</span>
+                        <h3 class="product-name">Milan Leather Tote</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(312)</span>
+                        </div>
+                        <p class="product-desc">Handcrafted Italian calfskin leather with gold-tone hardware.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$1,890</span>
+                            <button class="btn btn-add-cart" data-id="b1" data-name="Milan Leather Tote" data-price="1890" data-image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1935&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="crossbody" data-country="france">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=2069&auto=format&fit=crop" alt="Paris Crossbody Bag" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b2"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b2"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">New</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> France
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Rive Gauche</span>
+                        <h3 class="product-name">Paris Crossbody</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(245)</span>
+                        </div>
+                        <p class="product-desc">Saffiano leather with adjustable strap and multiple compartments.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$1,250</span>
+                            <button class="btn btn-add-cart" data-id="b2" data-name="Paris Crossbody" data-price="1250" data-image="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=2069&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="clutch" data-country="spain">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?q=80&w=1972&auto=format&fit=crop" alt="Barcelona Crystal Clutch" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b3"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b3"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge premium">Premium</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Spain
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Barcelona Luxe</span>
+                        <h3 class="product-name">Barcelona Crystal Clutch</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(178)</span>
+                        </div>
+                        <p class="product-desc">Crystal-embellished mesh clutch with satin interior lining.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$2,400</span>
+                            <button class="btn btn-add-cart" data-id="b3" data-name="Barcelona Crystal Clutch" data-price="2400" data-image="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?q=80&w=1972&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="backpack" data-country="germany">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=1887&auto=format&fit=crop" alt="Berlin Urban Backpack" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b4"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b4"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Germany
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Berlin Craft</span>
+                        <h3 class="product-name">Berlin Urban Backpack</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(134)</span>
+                        </div>
+                        <p class="product-desc">Water-resistant canvas with leather trim and padded laptop compartment.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$890</span>
+                            <button class="btn btn-add-cart" data-id="b4" data-name="Berlin Urban Backpack" data-price="890" data-image="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=1887&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="shoulder" data-country="uk">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1564375907666-4e6d4cb5d07d?q=80&w=1974&auto=format&fit=crop" alt="London Shoulder Bag" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b5"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b5"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">Limited</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> United Kingdom
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Savile Row</span>
+                        <h3 class="product-name">London Shoulder Bag</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(201)</span>
+                        </div>
+                        <p class="product-desc">British grain leather with brass hardware and detachable shoulder strap.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$1,650</span>
+                            <button class="btn btn-add-cart" data-id="b5" data-name="London Shoulder Bag" data-price="1650" data-image="https://images.unsplash.com/photo-1564375907666-4e6d4cb5d07d?q=80&w=1974&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="tote" data-country="japan">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1591561954557-26941169b08e?q=80&w=1974&auto=format&fit=crop" alt="Tokyo Canvas Tote" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b6"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b6"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Japan
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Tokyo Minimal</span>
+                        <h3 class="product-name">Tokyo Canvas Tote</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(167)</span>
+                        </div>
+                        <p class="product-desc">Minimalist Japanese canvas with clean lines and premium stitching.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$520</span>
+                            <button class="btn btn-add-cart" data-id="b6" data-name="Tokyo Canvas Tote" data-price="520" data-image="https://images.unsplash.com/photo-1591561954557-26941169b08e?q=80&w=1974&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="crossbody" data-country="brazil">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1594226801341-41427b4e5c1e?q=80&w=1887&auto=format&fit=crop" alt="Rio Color Block Crossbody" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b7"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b7"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Brazil
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Rio Vibrant</span>
+                        <h3 class="product-name">Rio Color Block Crossbody</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <p class="product-desc">Vibrant Brazilian leather with hand-painted color block design.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$680</span>
+                            <button class="btn btn-add-cart" data-id="b7" data-name="Rio Color Block Crossbody" data-price="680" data-image="https://images.unsplash.com/photo-1594226801341-41427b4e5c1e?q=80&w=1887&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="clutch" data-country="italy">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=1976&auto=format&fit=crop" alt="Florence Minaudiere" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b8"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b8"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">Premium</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Italy
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Florence Artisan</span>
+                        <h3 class="product-name">Florence Minaudiere</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(145)</span>
+                        </div>
+                        <p class="product-desc">Velvet minaudiere with hand-embroidered floral motifs and gold frame.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$1,980</span>
+                            <button class="btn btn-add-cart" data-id="b8" data-name="Florence Minaudiere" data-price="1980" data-image="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=1976&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="shoulder" data-country="france">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1584382192960-d27d1ba11ec3?q=80&w=1935&auto=format&fit=crop" alt="Nice Straw Shoulder Bag" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b9"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b9"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> France
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Cote d'Azur</span>
+                        <h3 class="product-name">Nice Straw Shoulder Bag</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(112)</span>
+                        </div>
+                        <p class="product-desc">Handwoven straw with leather trim, perfect for summer elegance.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$450</span>
+                            <button class="btn btn-add-cart" data-id="b9" data-name="Nice Straw Shoulder Bag" data-price="450" data-image="https://images.unsplash.com/photo-1584382192960-d27d1ba11ec3?q=80&w=1935&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="backpack" data-country="sweden">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1581605405669-fcdf81165afa?q=80&w=1886&auto=format&fit=crop" alt="Stockholm Minimal Backpack" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b10"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b10"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Sweden
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Scandi Design</span>
+                        <h3 class="product-name">Stockholm Minimal Backpack</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(98)</span>
+                        </div>
+                        <p class="product-desc">Clean Scandinavian design in vegan leather with recycled lining.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$620</span>
+                            <button class="btn btn-add-cart" data-id="b10" data-name="Stockholm Minimal Backpack" data-price="620" data-image="https://images.unsplash.com/photo-1581605405669-fcdf81165afa?q=80&w=1886&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="tote" data-country="france">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?q=80&w=1888&auto=format&fit=crop" alt="Cannes Beach Tote" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b11"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b11"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">New</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> France
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Riviera Style</span>
+                        <h3 class="product-name">Cannes Beach Tote</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(76)</span>
+                        </div>
+                        <p class="product-desc">Raffia tote with leather handles and matching pouch.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$380</span>
+                            <button class="btn btn-add-cart" data-id="b11" data-name="Cannes Beach Tote" data-price="380" data-image="https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?q=80&w=1888&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="shoulder" data-country="usa">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1582885854912-5e17beb7e451?q=80&w=1932&auto=format&fit=crop" alt="New York Metro Bag" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b12"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b12"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> USA
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">NYC Edge</span>
+                        <h3 class="product-name">New York Metro Bag</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(223)</span>
+                        </div>
+                        <p class="product-desc">Urban edgy design in black leather with silver chain strap.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$750</span>
+                            <button class="btn btn-add-cart" data-id="b12" data-name="New York Metro Bag" data-price="750" data-image="https://images.unsplash.com/photo-1582885854912-5e17beb7e451?q=80&w=1932&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="tote" data-country="spain">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=1976&auto=format&fit=crop" alt="Madrid Leather Tote" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b13"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b13"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Spain
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Iberian Leather</span>
+                        <h3 class="product-name">Madrid Leather Tote</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(145)</span>
+                        </div>
+                        <p class="product-desc">Spanish leather tote with woven details and detachable pouch.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$1,120</span>
+                            <button class="btn btn-add-cart" data-id="b13" data-name="Madrid Leather Tote" data-price="1120" data-image="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=1976&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="crossbody" data-country="mexico">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=2069&auto=format&fit=crop" alt="Mexico City Crossbody" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b14"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b14"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">New</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Mexico
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Fiesta Leather</span>
+                        <h3 class="product-name">Mexico City Crossbody</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(67)</span>
+                        </div>
+                        <p class="product-desc">Hand-tooled leather with traditional embroidery and fringe details.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$480</span>
+                            <button class="btn btn-add-cart" data-id="b14" data-name="Mexico City Crossbody" data-price="480" data-image="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=2069&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="clutch" data-country="uk">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?q=80&w=1972&auto=format&fit=crop" alt="Edinburgh Tartan Clutch" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b15"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b15"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">Limited</div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> United Kingdom
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Highland Luxe</span>
+                        <h3 class="product-name">Edinburgh Tartan Clutch</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(91)</span>
+                        </div>
+                        <p class="product-desc">Authentic tartan wool with leather trim and brass clasp.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$530</span>
+                            <button class="btn btn-add-cart" data-id="b15" data-name="Edinburgh Tartan Clutch" data-price="530" data-image="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?q=80&w=1972&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="backpack" data-country="switzerland">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=1887&auto=format&fit=crop" alt="Zurich Alpine Backpack" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action quick-view" data-id="b16"><i class="fas fa-eye"></i></button>
+                            <button class="product-action add-wishlist" data-id="b16"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="product-country">
+                            <i class="fas fa-map-marker-alt"></i> Switzerland
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Alpine Craft</span>
+                        <h3 class="product-name">Zurich Alpine Backpack</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(78)</span>
+                        </div>
+                        <p class="product-desc">Waterproof fabric with precision Swiss engineering and ergonomic design.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$950</span>
+                            <button class="btn btn-add-cart" data-id="b16" data-name="Zurich Alpine Backpack" data-price="950" data-image="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=1887&auto=format&fit=crop"><i class="fas fa-shopping-bag"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta reveal">
+                <a href="#!" class="btn btn-primary view-all-btn">View All Bags <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="global" class="global section">
+        <div class="section-bg parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=1931&auto=format&fit=crop');"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Worldwide Sourcing</span>
+                <h2 class="section-title">From Around The <span class="gold-text">Globe</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-globe-americas divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="section-desc">Every product tells a story of its origin. We travel the world to bring you the finest craftsmanship from every corner of the earth.</p>
+            </div>
+            <div class="global-grid reveal">
+                <div class="global-card">
+                    <div class="global-card-bg" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2073&auto=format&fit=crop');"></div>
+                    <div class="global-card-overlay">
+                        <div class="global-card-content">
+                            <span class="global-flag">🇫🇷</span>
+                            <h3>France</h3>
+                            <p>The perfume capital of the world. Our French partners have perfected the art of fragrance for over five generations.</p>
+                            <span class="global-specialty">Specialty: Fine Fragrances</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-card">
+                    <div class="global-card-bg" style="background-image: url('https://images.unsplash.com/photo-1531072900881-b3be1fc4d0c0?q=80&w=2070&auto=format&fit=crop');"></div>
+                    <div class="global-card-overlay">
+                        <div class="global-card-content">
+                            <span class="global-flag">🇮🇹</span>
+                            <h3>Italy</h3>
+                            <p>Home to the world's finest leather artisans. Italian craftsmanship is synonymous with luxury and timeless elegance.</p>
+                            <span class="global-specialty">Specialty: Leather Goods</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-card">
+                    <div class="global-card-bg" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070&auto=format&fit=crop');"></div>
+                    <div class="global-card-overlay">
+                        <div class="global-card-content">
+                            <span class="global-flag">🇦🇪</span>
+                            <h3>United Arab Emirates</h3>
+                            <p>The heart of Arabian perfumery. Our Oud and Musk collections are sourced directly from Dubai's most prestigious perfumers.</p>
+                            <span class="global-specialty">Specialty: Oud & Musk</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-card">
+                    <div class="global-card-bg" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1974&auto=format&fit=crop');"></div>
+                    <div class="global-card-overlay">
+                        <div class="global-card-content">
+                            <span class="global-flag">🇯🇵</span>
+                            <h3>Japan</h3>
+                            <p>Where minimalism meets precision. Japanese aesthetics inspire our clean, sophisticated designs and fresh scents.</p>
+                            <span class="global-specialty">Specialty: Minimalist Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-card">
+                    <div class="global-card-bg" style="background-image: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=2070&auto=format&fit=crop');"></div>
+                    <div class="global-card-overlay">
+                        <div class="global-card-content">
+                            <span class="global-flag">🇹🇷</span>
+                            <h3>Turkey</h3>
+                            <p>The crossroads of civilizations. Turkish rose absolute has been prized for centuries and remains the heart of floral perfumery.</p>
+                            <span class="global-specialty">Specialty: Rose Extracts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-card">
+                    <div class="global-card-bg" style="background-image: url('https://images.unsplash.com/photo-1529655683826-aba9b3e77383?q=80&w=1965&auto=format&fit=crop');"></div>
+                    <div class="global-card-overlay">
+                        <div class="global-card-content">
+                            <span class="global-flag">🇬🇧</span>
+                            <h3>United Kingdom</h3>
+                            <p>British heritage and sophistication. Our London collection reflects centuries of tailoring and refinement.</p>
+                            <span class="global-specialty">Specialty: Heritage Craft</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-card">
+                    <div class="global-card-bg" style="background-image: url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=2070&auto=format&fit=crop');"></div>
+                    <div class="global-card-overlay">
+                        <div class="global-card-content">
+                            <span class="global-flag">🇺🇸</span>
+                            <h3>United States</h3>
+                            <p>American innovation meets luxury. From New York's fashion district to California's artisanal studios.</p>
+                            <span class="global-specialty">Specialty: Modern Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-card">
+                    <div class="global-card-bg" style="background-image: url('https://images.unsplash.com/photo-1518509562904-e7ef99cd678e?q=80&w=1974&auto=format&fit=crop');"></div>
+                    <div class="global-card-overlay">
+                        <div class="global-card-content">
+                            <span class="global-flag">🇲🇦</span>
+                            <h3>Morocco</h3>
+                            <p>North African exoticism. Moroccan spices and flowers create some of the most captivating fragrances in our collection.</p>
+                            <span class="global-specialty">Specialty: Exotic Scents</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-card">
+                    <div class="global-card-bg" style="background-image: url('https://images.unsplash.com/photo-1560703650-ef3e0f254ae6?q=80&w=2070&auto=format&fit=crop');"></div>
+                    <div class="global-card-overlay">
+                        <div class="global-card-content">
+                            <span class="global-flag">🇮🇳</span>
+                            <h3>India</h3>
+                            <p>The land of spices and ancient perfume traditions. Our Indian collection celebrates Ayurvedic and Mughal perfumery.</p>
+                            <span class="global-specialty">Specialty: Spice Blends</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-card">
+                    <div class="global-card-bg" style="background-image: url('https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1956&auto=format&fit=crop');"></div>
+                    <div class="global-card-overlay">
+                        <div class="global-card-content">
+                            <span class="global-flag">🇪🇸</span>
+                            <h3>Spain</h3>
+                            <p>Passion and artistry. Spanish artisans bring vibrancy and drama to our bag collections.</p>
+                            <span class="global-specialty">Specialty: Embellished Bags</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-card">
+                    <div class="global-card-bg" style="background-image: url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=2070&auto=format&fit=crop');"></div>
+                    <div class="global-card-overlay">
+                        <div class="global-card-content">
+                            <span class="global-flag">🇧🇷</span>
+                            <h3>Brazil</h3>
+                            <p>Vibrant energy and color. Brazilian leatherwork brings joy and boldness to our accessory collections.</p>
+                            <span class="global-specialty">Specialty: Colorful Leather</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-card">
+                    <div class="global-card-bg" style="background-image: url('https://images.unsplash.com/photo-1509356843151-3e7d0eecb4e6?q=80&w=2070&auto=format&fit=crop');"></div>
+                    <div class="global-card-overlay">
+                        <div class="global-card-content">
+                            <span class="global-flag">🇪🇬</span>
+                            <h3>Egypt</h3>
+                            <p>The birthplace of perfume. Egyptian musk and amber traditions date back thousands of years.</p>
+                            <span class="global-specialty">Specialty: Ancient Scents</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Client Voices</span>
+                <h2 class="section-title">What Our <span class="gold-text">Clients</span> Say</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-quote-right divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="testimonial-slider reveal" id="testimonialSlider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"PrimeP has completely transformed my perception of luxury shopping. The Parisian Bloom perfume is absolutely divine, and the Milan Leather Tote is even more beautiful in person. The attention to detail in every product is remarkable."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop" alt="Sophia" loading="lazy">
+                            <div>
+                                <h4>Sophia Chen</h4>
+                                <span>Verified Buyer, New York</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I received the Dubai Oud as a gift and I am absolutely in love. The depth and complexity of the fragrance is unlike anything I have ever experienced. The presentation and packaging were also exquisite — truly a five-star experience."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop" alt="James" loading="lazy">
+                            <div>
+                                <h4>James Al-Rashid</h4>
+                                <span>Verified Buyer, Dubai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The Barcelona Crystal Clutch was the highlight of my wedding ensemble. I received countless compliments. PrimeP's curation is unmatched — they source pieces that you simply cannot find anywhere else. I am a customer for life."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop" alt="Maria" loading="lazy">
+                            <div>
+                                <h4>Maria Gonzalez</h4>
+                                <span>Verified Buyer, Madrid</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"As a long-time collector of fine fragrances, PrimeP's selection of niche perfumes is exceptional. The Kyoto Rain captures the essence of Japanese tranquility perfectly. Their global sourcing truly sets them apart from any other retailer."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop" alt="Takeshi" loading="lazy">
+                            <div>
+                                <h4>Takeshi Yamamoto</h4>
+                                <span>Verified Buyer, Tokyo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The London Shoulder Bag is my new everyday companion. The leather quality is exceptional and the craftsmanship is evident in every stitch. PrimeP's customer service was also outstanding — they helped me choose the perfect color."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop" alt="Oliver" loading="lazy">
+                            <div>
+                                <h4>Oliver Whitfield</h4>
+                                <span>Verified Buyer, London</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I bought the Mumbai Spice for my husband and he hasn't worn anything else since. The warmth of the spices combined with the smooth sandalwood creates such an inviting scent. PrimeP's shipping to India was also incredibly fast."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?q=80&w=1887&auto=format&fit=crop" alt="Priya" loading="lazy">
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <span>Verified Buyer, Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The Florence Minaudiere is a work of art. Every time I carry it, people stop me to ask where I got it. PrimeP truly brings museum-quality craftsmanship to your wardrobe. Worth every penny."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop" alt="Elena" loading="lazy">
+                            <div>
+                                <h4>Elena Vogt</h4>
+                                <span>Verified Buyer, Berlin</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"PrimeP's gift sets are absolutely perfect. I purchased the Marrakech Jasmine collection for my mother and the presentation was so beautiful she almost didn't want to open it. The fragrance itself is stunning — elegant and sophisticated."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop" alt="Amine" loading="lazy">
+                            <div>
+                                <h4>Amine Benali</h4>
+                                <span>Verified Buyer, Casablanca</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn prev" id="testPrev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots" id="testDots"></div>
+                    <button class="testimonial-btn next" id="testNext"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="limited-edition section" id="limited">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Exclusive Drops</span>
+                <h2 class="section-title">Limited <span class="gold-text">Edition</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-gem divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="section-desc">Rare pieces available for a limited time only. Once they are gone, they are gone forever.</p>
+            </div>
+            <div class="limited-grid reveal">
+                <div class="limited-card limited-featured">
+                    <div class="limited-img" style="background-image: url('https://images.unsplash.com/photo-1518894781321-630e638d0742?q=80&w=2048&auto=format&fit=crop');"></div>
+                    <div class="limited-info">
+                        <div class="limited-timer">
+                            <span class="timer-label">Sale Ends In</span>
+                            <div class="countdown" id="countdown">
+                                <div class="countdown-item">
+                                    <span class="countdown-number" id="days">12</span>
+                                    <span class="countdown-label">Days</span>
+                                </div>
+                                <div class="countdown-sep">:</div>
+                                <div class="countdown-item">
+                                    <span class="countdown-number" id="hours">08</span>
+                                    <span class="countdown-label">Hours</span>
+                                </div>
+                                <div class="countdown-sep">:</div>
+                                <div class="countdown-item">
+                                    <span class="countdown-number" id="minutes">45</span>
+                                    <span class="countdown-label">Mins</span>
+                                </div>
+                                <div class="countdown-sep">:</div>
+                                <div class="countdown-item">
+                                    <span class="countdown-number" id="seconds">30</span>
+                                    <span class="countdown-label">Secs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Imperial Oud & Gold Collection</h3>
+                        <p>A collaboration with the House of Al-Faisal. Only 500 numbered sets worldwide. Each set includes a hand-blown crystal perfume bottle and a 24k gold-accented clutch.</p>
+                        <div class="limited-price">
+                            <span class="limited-original">$4,200</span>
+                            <span class="limited-sale">$3,600</span>
+                        </div>
+                        <button class="btn btn-primary">Secure Yours <i class="fas fa-lock"></i></button>
+                    </div>
+                </div>
+                <div class="limited-card">
+                    <div class="limited-img" style="background-image: url('https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=2070&auto=format&fit=crop');"></div>
+                    <div class="limited-info">
+                        <span class="limited-badge">Only 47 Left</span>
+                        <h4>Rose Noir Limited Edition</h4>
+                        <p>Midnight rose with black truffle and aged patchouli.</p>
+                        <span class="limited-sale">$890</span>
+                        <button class="btn btn-sm">Pre-Order</button>
+                    </div>
+                </div>
+                <div class="limited-card">
+                    <div class="limited-img" style="background-image: url('https://images.unsplash.com/photo-1564375907666-4e6d4cb5d07d?q=80&w=1974&auto=format&fit=crop');"></div>
+                    <div class="limited-info">
+                        <span class="limited-badge">Only 23 Left</span>
+                        <h4>Milan Saffiano Limited</h4>
+                        <p>Year of the Dragon edition in deep crimson.</p>
+                        <span class="limited-sale">$2,200</span>
+                        <button class="btn btn-sm">Pre-Order</button>
+                    </div>
+                </div>
+                <div class="limited-card">
+                    <div class="limited-img" style="background-image: url('https://images.unsplash.com/photo-1619994380355-1a42106b1f2b?q=80&w=1974&auto=format&fit=crop');"></div>
+                    <div class="limited-info">
+                        <span class="limited-badge">Only 88 Left</span>
+                        <h4>Amber Sapphire Parfum</h4>
+                        <p>Aged 12 months in French oak barrels.</p>
+                        <span class="limited-sale">$1,200</span>
+                        <button class="btn btn-sm">Pre-Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Visual Elegance</span>
+                <h2 class="section-title">The <span class="gold-text">PrimeP</span> Gallery</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-camera divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item gallery-large">
+                    <img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?q=80&w=2070&auto=format&fit=crop" alt="Luxury Perfume Display" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Parisian Boutique</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1935&auto=format&fit=crop" alt="Premium Handbag Collection" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Milan Atelier</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?q=80&w=2070&auto=format&fit=crop" alt="Luxury Lifestyle" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Luxury Lifestyle</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518894781321-630e638d0742?q=80&w=2048&auto=format&fit=crop" alt="Limited Edition Collection" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Limited Edition</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1591561954557-26941169b08e?q=80&w=1974&auto=format&fit=crop" alt="Japanese Minimalist" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Tokyo Studio</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop" alt="Gift Collections" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Gift Collections</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?q=80&w=1888&auto=format&fit=crop" alt="Summer Collection" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Summer Edit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sustainability section">
+        <div class="container">
+            <div class="sustainability-content reveal">
+                <div class="sustainability-text">
+                    <span class="section-tag">Our Commitment</span>
+                    <h2 class="section-title">Sustainable <span class="gold-text">Luxury</span></h2>
+                    <div class="section-divider">
+                        <span class="divider-line"></span>
+                        <i class="fas fa-leaf divider-icon"></i>
+                        <span class="divider-line"></span>
+                    </div>
+                    <p>At PrimeP, we believe that true luxury must also be responsible. We are committed to sustainable practices throughout our supply chain, from ethically sourced raw materials to eco-conscious packaging. Our partner artisans share our dedication to preserving traditional crafts while protecting our planet for future generations.</p>
+                    <div class="sustainability-stats">
+                        <div class="sustain-stat">
+                            <span class="sustain-number">100%</span>
+                            <span class="sustain-label">Eco-Friendly Packaging</span>
+                        </div>
+                        <div class="sustain-stat">
+                            <span class="sustain-number">85%</span>
+                            <span class="sustain-label">Sustainable Materials</span>
+                        </div>
+                        <div class="sustain-stat">
+                            <span class="sustain-number">50+</span>
+                            <span class="sustain-label">Artisan Communities Supported</span>
+                        </div>
+                        <div class="sustain-stat">
+                            <span class="sustain-number">30%</span>
+                            <span class="sustain-label">Carbon Footprint Reduced</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sustainability-image">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" alt="Sustainable Luxury" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Trusted Worldwide</span>
+                <h2 class="section-title">Our <span class="gold-text">Partners</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-handshake divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="partners-grid reveal">
+                <div class="partner-item">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop" alt="Partner Brand" loading="lazy">
+                </div>
+                <div class="partner-item">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop" alt="Partner Brand" loading="lazy">
+                </div>
+                <div class="partner-item">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop" alt="Partner Brand" loading="lazy">
+                </div>
+                <div class="partner-item">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop" alt="Partner Brand" loading="lazy">
+                </div>
+                <div class="partner-item">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop" alt="Partner Brand" loading="lazy">
+                </div>
+                <div class="partner-item">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop" alt="Partner Brand" loading="lazy">
+                </div>
+                <div class="partner-item">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop" alt="Partner Brand" loading="lazy">
+                </div>
+                <div class="partner-item">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop" alt="Partner Brand" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Beyond Shopping</span>
+                <h2 class="section-title">Our <span class="gold-text">Services</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-concierge-bell divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="services-grid reveal">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Personal Shopping</h3>
+                    <p>Work with our expert stylists who will curate a selection tailored to your preferences, lifestyle, and occasions that matter to you.</p>
+                    <a href="#" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Customization</h3>
+                    <p>Personalize your purchase with monogramming, custom engravings, and bespoke packaging. Make every piece uniquely yours.</p>
+                    <a href="#" class="service-link">Explore Options <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Virtual Try-On</h3>
+                    <p>Use our augmented reality tool to see how perfumes complement your style and how bags look with your wardrobe before buying.</p>
+                    <a href="#" class="service-link">Try Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Atelier Visits</h3>
+                    <p>Schedule a private appointment at our flagship atelier for an exclusive hands-on experience with our full collection and expert staff.</p>
+                    <a href="#" class="service-link">Schedule Visit <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Loyalty Program</h3>
+                    <p>Join PrimeP Circle and earn points with every purchase. Unlock exclusive perks, early access, birthday surprises, and VIP events.</p>
+                    <a href="#" class="service-link">Join Free <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Pre-Loved Luxury</h3>
+                    <p>Trade in or sell your pre-loved luxury items through our certified authentication and resale program. Sustainable luxury at its finest.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Corporate Gifting</h3>
+                    <p>Impress your clients and partners with bespoke corporate gift packages. We handle everything from selection to personalized packaging and delivery.</p>
+                    <a href="#" class="service-link">Inquire Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Repair & Restoration</h3>
+                    <p>Our master craftsmen offer expert repair and restoration services for your cherished luxury items, from perfume bottle refills to leather restoration.</p>
+                    <a href="#" class="service-link">Book Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-bar">
+        <div class="container">
+            <div class="features-grid reveal">
+                <div class="feature-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4>Free Worldwide Shipping</h4>
+                    <p>On orders over $200</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>100% Authentic Guarantee</h4>
+                    <p>Verified luxury products</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-rotate-left"></i>
+                    <h4>30-Day Easy Returns</h4>
+                    <p>No questions asked</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-gift"></i>
+                    <h4>Complimentary Gift Wrap</h4>
+                    <p>With every purchase</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-headset"></i>
+                    <h4>24/7 Concierge</h4>
+                    <p>Dedicated support team</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-leaf"></i>
+                    <h4>Sustainable Luxury</h4>
+                    <p>Eco-conscious packaging</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="instagram-feed">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Follow Us</span>
+                <h2 class="section-title">#PrimeP<span class="gold-text">Luxury</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fab fa-instagram divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="insta-grid reveal">
+                <a href="#" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?q=80&w=2070&auto=format&fit=crop" alt="@primep" loading="lazy">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>@primep</span>
+                    </div>
+                </a>
+                <a href="#" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1935&auto=format&fit=crop" alt="@primep" loading="lazy">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>@primep</span>
+                    </div>
+                </a>
+                <a href="#" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1518894781321-630e638d0742?q=80&w=2048&auto=format&fit=crop" alt="@primep" loading="lazy">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>@primep</span>
+                    </div>
+                </a>
+                <a href="#" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?q=80&w=2070&auto=format&fit=crop" alt="@primep" loading="lazy">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>@primep</span>
+                    </div>
+                </a>
+                <a href="#" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd1a?q=80&w=2040&auto=format&fit=crop" alt="@primep" loading="lazy">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>@primep</span>
+                    </div>
+                </a>
+                <a href="#" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1591561954557-26941169b08e?q=80&w=1974&auto=format&fit=crop" alt="@primep" loading="lazy">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>@primep</span>
+                    </div>
+                </a>
+                <a href="#" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1619994380355-1a42106b1f2b?q=80&w=1974&auto=format&fit=crop" alt="@primep" loading="lazy">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>@primep</span>
+                    </div>
+                </a>
+                <a href="#" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?q=80&w=2076&auto=format&fit=crop" alt="@primep" loading="lazy">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>@primep</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="press section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">In The Media</span>
+                <h2 class="section-title">As Seen <span class="gold-text">In</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-newspaper divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="press-grid reveal">
+                <div class="press-card">
+                    <div class="press-logo">
+                        <i class="fas fa-newspaper"></i>
+                        <span>VOGUE</span>
+                    </div>
+                    <p>"PrimeP is redefining luxury e-commerce with their meticulously curated global collection."</p>
+                    <span class="press-date">March 2024</span>
+                </div>
+                <div class="press-card">
+                    <div class="press-logo">
+                        <i class="fas fa-newspaper"></i>
+                        <span>ELLE</span>
+                    </div>
+                    <p>"The destination for discerning shoppers who value craftsmanship and global heritage."</p>
+                    <span class="press-date">February 2024</span>
+                </div>
+                <div class="press-card">
+                    <div class="press-logo">
+                        <i class="fas fa-newspaper"></i>
+                        <span>HARPER'S</span>
+                    </div>
+                    <p>"An extraordinary selection of perfumes and bags that tell stories from around the world."</p>
+                    <span class="press-date">January 2024</span>
+                </div>
+                <div class="press-card">
+                    <div class="press-logo">
+                        <i class="fas fa-newspaper"></i>
+                        <span>FORBES</span>
+                    </div>
+                    <p>"PrimeP's innovative approach to luxury retail is setting new standards in the industry."</p>
+                    <span class="press-date">December 2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our People</span>
+                <h2 class="section-title">Meet The <span class="gold-text">Team</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-users divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="team-grid reveal">
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop" alt="Alexander Prime" loading="lazy">
+                    </div>
+                    <h4>Alexander Prime</h4>
+                    <span class="team-role">Founder & CEO</span>
+                    <p>Former luxury buyer with 20 years of experience in haute couture and fine fragrances.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop" alt="Victoria Chen" loading="lazy">
+                    </div>
+                    <h4>Victoria Chen</h4>
+                    <span class="team-role">Head Curator</span>
+                    <p>Master perfumer trained in Grasse, France with a nose that has won international awards.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop" alt="Marcus Williams" loading="lazy">
+                    </div>
+                    <h4>Marcus Williams</h4>
+                    <span class="team-role">Creative Director</span>
+                    <p>Former runway designer who brings artistic vision to every PrimeP collection.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop" alt="Sofia Romano" loading="lazy">
+                    </div>
+                    <h4>Sofia Romano</h4>
+                    <span class="team-role">Head of Global Sourcing</span>
+                    <p>Fluent in six languages, she travels the world to discover exceptional artisans and ateliers.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our Ethos</span>
+                <h2 class="section-title">Core <span class="gold-text">Values</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-star divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="values-grid reveal">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Craftsmanship</h3>
+                    <p>We honor traditional techniques passed down through generations, ensuring every stitch and note is perfected by master artisans who pour their soul into their work.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Community</h3>
+                    <p>We build bridges between cultures, supporting artisan communities worldwide and preserving heritage crafts that might otherwise be lost to time and industrialization.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainability</h3>
+                    <p>Luxury should never come at the cost of our planet. We are committed to ethical sourcing, eco-friendly packaging, and reducing our carbon footprint with every passing year.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Authenticity</h3>
+                    <p>Every product on PrimeP is meticulously verified for authenticity. We guarantee that what you receive is exactly what was promised — genuine, exceptional, and timeless.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Client Devotion</h3>
+                    <p>Our clients are at the heart of everything we do. From personalized recommendations to 24/7 concierge service, we strive to exceed expectations at every turn.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>While honoring tradition, we embrace innovation — from sustainable materials to cutting-edge e-commerce experiences that make luxury accessible and enjoyable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="awards section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Recognition</span>
+                <h2 class="section-title">Awards & <span class="gold-text">Accolades</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-trophy divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="awards-grid reveal">
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Best Luxury E-Commerce</h3>
+                    <span class="award-org">Luxury Retail Awards 2024</span>
+                    <p>Recognized for exceptional curation and client experience in the digital luxury space.</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Excellence in Craftsmanship</h3>
+                    <span class="award-org">Artisan Heritage Foundation</span>
+                    <p>Awarded for our commitment to preserving traditional artisan techniques worldwide.</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Top 50 Global Brands</h3>
+                    <span class="award-org">Forbes Luxury Index</span>
+                    <p>Named among the most promising luxury brands redefining the industry landscape.</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainability Leader</h3>
+                    <span class="award-org">Green Luxury Initiative</span>
+                    <p>Honored for our comprehensive sustainability program and eco-conscious operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Questions?</span>
+                <h2 class="section-title">Frequently Asked <span class="gold-text">Questions</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-question-circle divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="faq-grid reveal">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Are your products authentic?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Every product on PrimeP is sourced directly from the brand or authorized distributors. We personally verify each item's authenticity before it is shipped to you. We offer a 100% authenticity guarantee with every purchase.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How does international shipping work?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer free worldwide shipping on all orders over $200. International deliveries typically arrive within 5-10 business days. All duties and taxes are calculated at checkout and included in the final price — no hidden fees upon delivery.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What is your return policy?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day return policy on all items in their original condition and packaging. To initiate a return, simply visit your order history and select the items you would like to return. We provide a prepaid return shipping label.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you offer gift wrapping?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Every PrimeP order comes with complimentary luxury gift wrapping. You can also add a personalized message at checkout. For an additional fee, we offer premium gift boxes with satin ribbons and hand-written calligraphy cards.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How do I track my order?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Once your order ships, you will receive a confirmation email with a tracking number. You can track your package in real-time through your PrimeP account dashboard or via our mobile app.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you offer loyalty programs?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! PrimeP Circle members enjoy exclusive benefits including early access to new collections, members-only pricing, free priority shipping, birthday gifts, and invitations to exclusive events. Membership is free and you earn points with every purchase.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I cancel or modify my order?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Orders can be modified or canceled within 1 hour of placement. After that, our fulfillment team begins processing your order. Please contact our concierge team immediately if you need to make changes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you offer payment plans?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we partner with Affirm, Afterpay, and Klarna to offer flexible payment options. You can split your purchase into 4 interest-free installments or choose a monthly payment plan at checkout.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sourcing section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Global Network</span>
+                <h2 class="section-title">Our Sourcing <span class="gold-text">Map</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-map-marked-alt divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="sourcing-content reveal">
+                <div class="sourcing-map">
+                    <div class="map-pin" style="top: 25%; left: 42%;" data-country="France">
+                        <span class="pin-dot"></span>
+                        <span class="pin-label">France</span>
+                    </div>
+                    <div class="map-pin" style="top: 30%; left: 47%;" data-country="Italy">
+                        <span class="pin-dot"></span>
+                        <span class="pin-label">Italy</span>
+                    </div>
+                    <div class="map-pin" style="top: 20%; left: 55%;" data-country="UAE">
+                        <span class="pin-dot"></span>
+                        <span class="pin-label">UAE</span>
+                    </div>
+                    <div class="map-pin" style="top: 22%; left: 72%;" data-country="Japan">
+                        <span class="pin-dot"></span>
+                        <span class="pin-label">Japan</span>
+                    </div>
+                    <div class="map-pin" style="top: 38%; left: 30%;" data-country="USA">
+                        <span class="pin-dot"></span>
+                        <span class="pin-label">USA</span>
+                    </div>
+                    <div class="map-pin" style="top: 35%; left: 55%;" data-country="India">
+                        <span class="pin-dot"></span>
+                        <span class="pin-label">India</span>
+                    </div>
+                    <div class="map-pin" style="top: 28%; left: 52%;" data-country="Turkey">
+                        <span class="pin-dot"></span>
+                        <span class="pin-label">Turkey</span>
+                    </div>
+                    <div class="map-pin" style="top: 32%; left: 48%;" data-country="Morocco">
+                        <span class="pin-dot"></span>
+                        <span class="pin-label">Morocco</span>
+                    </div>
+                    <div class="map-pin" style="top: 40%; left: 50%;" data-country="Brazil">
+                        <span class="pin-dot"></span>
+                        <span class="pin-label">Brazil</span>
+                    </div>
+                    <div class="map-pin" style="top: 25%; left: 38%;" data-country="UK">
+                        <span class="pin-dot"></span>
+                        <span class="pin-label">UK</span>
+                    </div>
+                </div>
+                <div class="sourcing-stats">
+                    <div class="sourcing-stat">
+                        <i class="fas fa-route"></i>
+                        <span class="sourcing-number">50+</span>
+                        <span class="sourcing-label">Countries Sourced</span>
+                    </div>
+                    <div class="sourcing-stat">
+                        <i class="fas fa-handshake"></i>
+                        <span class="sourcing-number">200+</span>
+                        <span class="sourcing-label">Artisan Partners</span>
+                    </div>
+                    <div class="sourcing-stat">
+                        <i class="fas fa-plane"></i>
+                        <span class="sourcing-number">500K+</span>
+                        <span class="sourcing-label">Miles Traveled</span>
+                    </div>
+                    <div class="sourcing-stat">
+                        <i class="fas fa-smile"></i>
+                        <span class="sourcing-number">98%</span>
+                        <span class="sourcing-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our Journey</span>
+                <h2 class="section-title">PrimeP <span class="gold-text">Timeline</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-clock divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="timeline-grid reveal">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024 Q1</span>
+                        <h4>PrimeP Founded</h4>
+                        <p>Alexander Prime launches PrimeP with a vision to connect global artisans with discerning luxury clients worldwide.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024 Q2</span>
+                        <h4>First 50 Artisan Partners</h4>
+                        <p>We establish relationships with master perfumers in Grasse, leather artisans in Milan, and weavers in Kyoto.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024 Q3</span>
+                        <h4>Flagship Atelier Opens</h4>
+                        <p>Our premier flagship location opens on Luxury Avenue in New York, offering an immersive brand experience.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024 Q4</span>
+                        <h4>5,000 Clients Served</h4>
+                        <p>PrimeP reaches the milestone of serving over 5,000 clients across 45 countries with a 98% satisfaction rate.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025 Q1</span>
+                        <h4>Sustainability Initiative Launched</h4>
+                        <p>We roll out our comprehensive sustainability program, including carbon-neutral shipping and fully recyclable packaging.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025 Q2</span>
+                        <h4>Limited Edition Success</h4>
+                        <p>Our first limited edition collaboration with the House of Al-Faisal sells out in under 48 hours, setting a new record.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">PrimeP Journal</span>
+                <h2 class="section-title">Latest <span class="gold-text">Stories</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-book-open divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="blog-grid reveal">
+                <article class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?q=80&w=2070&auto=format&fit=crop" alt="The Art of Perfumery" loading="lazy">
+                        <div class="blog-date">
+                            <span>15</span>
+                            <span>Mar</span>
+                        </div>
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Victoria Chen</span>
+                            <span><i class="fas fa-tag"></i> Fragrance</span>
+                        </div>
+                        <h3>The Art of Perfumery: A Journey Through Grasse</h3>
+                        <p>Explore the ancient traditions of the world's perfume capital and how our master perfumers create magic in every bottle.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1935&auto=format&fit=crop" alt="Italian Leather Craft" loading="lazy">
+                        <div class="blog-date">
+                            <span>28</span>
+                            <span>Feb</span>
+                        </div>
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Marcus Williams</span>
+                            <span><i class="fas fa-tag"></i> Craftsmanship</span>
+                        </div>
+                        <h3>Inside Milan's Finest Leather Ateliers</h3>
+                        <p>An exclusive look at the generations-old workshops where our premium leather bags are brought to life with extraordinary skill.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" alt="Sustainable Luxury" loading="lazy">
+                        <div class="blog-date">
+                            <span>10</span>
+                            <span>Feb</span>
+                        </div>
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Sofia Romano</span>
+                            <span><i class="fas fa-tag"></i> Sustainability</span>
+                        </div>
+                        <h3>How We're Redefining Sustainable Luxury</h3>
+                        <p>Discover our comprehensive sustainability initiatives and how we balance luxury with environmental responsibility.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="cta-bg" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop');"></div>
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Ready To Experience <span class="gold-text">Global Luxury</span>?</h2>
+                <p>Join thousands of discerning clients who trust PrimeP for their finest perfumes and most treasured handbags. Begin your journey with us today.</p>
+                <div class="cta-buttons">
+                    <a href="#collections" class="btn btn-primary">Shop Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Book Consultation <i class="fas fa-calendar-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter section">
+        <div class="newsletter-bg" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop');"></div>
+        <div class="newsletter-overlay"></div>
+        <div class="container">
+            <div class="newsletter-content reveal">
+                <span class="newsletter-tag">Stay Connected</span>
+                <h2 class="newsletter-title">Join The <span class="gold-text">PrimeP</span> Circle</h2>
+                <p class="newsletter-desc">Subscribe for exclusive access to limited drops, early sale notifications, and members-only pricing. Be the first to discover new arrivals from around the globe.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="newsletter-input-group">
+                        <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <div class="newsletter-benefits">
+                        <span><i class="fas fa-check"></i> 10% off first order</span>
+                        <span><i class="fas fa-check"></i> Early access to drops</span>
+                        <span><i class="fas fa-check"></i> Members-only events</span>
+                    </div>
+                </form>
+                <div class="newsletter-success" id="newsletterSuccess">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>You're In!</h3>
+                    <p>Welcome to the PrimeP Circle. Check your inbox for your exclusive welcome offer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="gold-text">Us</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-envelope divider-icon"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="contact-content reveal">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Our Atelier</h4>
+                            <p>123 Luxury Avenue, 5th Floor<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+1 (800) 555-PRIME<br>Mon-Sat, 9AM-8PM EST</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>concierge@primep.com<br>We reply within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Concierge Hours</h4>
+                            <p>24/7 Online Support<br>In-Store by Appointment</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Full Name</label>
+                            <input type="text" id="contactName" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" placeholder="+1 (555) 000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <select id="contactSubject">
+                                <option value="">Select a subject</option>
+                                <option value="order">Order Inquiry</option>
+                                <option value="product">Product Question</option>
+                                <option value="returns">Returns & Exchanges</option>
+                                <option value="wholesale">Wholesale</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-promo">
+        <div class="container">
+            <div class="app-promo-content reveal">
+                <div class="app-promo-text">
+                    <span class="section-tag">Coming Soon</span>
+                    <h2>The PrimeP <span class="gold-text">App</span></h2>
+                    <p>Shop, track, and discover on the go. Our mobile app brings the world of PrimeP directly to your fingertips with exclusive app-only features and offers.</p>
+                    <div class="app-badges">
+                        <a href="#" class="app-badge"><i class="fab fa-apple"></i> App Store</a>
+                        <a href="#" class="app-badge"><i class="fab fa-google-play"></i> Google Play</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bg" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop');"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-brand">
+                    <a href="#home" class="footer-logo">Prime<span class="logo-accent">P</span></a>
+                    <p class="footer-desc">PrimeP is the world's premier destination for luxury perfumes and premium handbags. We curate the finest products from master artisans across the globe, bringing timeless elegance to your doorstep.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#perfumes">Perfumes</a></li>
+                        <li><a href="#bags">Bags</a></li>
+                        <li><a href="#global">Global</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Fine Perfumes</a></li>
+                        <li><a href="#">Premium Bags</a></li>
+                        <li><a href="#">Limited Edition</a></li>
+                        <li><a href="#">Gift Sets</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">CA Supply Chains Act</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links contact-info-list">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Ave, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (800) 555-PRIME</li>
+                        <li><i class="fas fa-envelope"></i> concierge@primep.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat 9AM-8PM EST</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-copy">&copy; 2024 PrimeP. All rights reserved. Crafted with passion, sourced from the world.</p>
+                    <div class="footer-payments">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-discover"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Bag</h3>
+            <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Your bag is empty</p>
+                <span>Discover our collections and add items you love.</span>
+                <a href="#collections" class="btn btn-primary">Shop Now</a>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-summary">
+                <div class="cart-subtotal">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">$0</span>
+                </div>
+                <div class="cart-shipping">
+                    <span>Shipping</span>
+                    <span id="cartShipping">Calculated at checkout</span>
+                </div>
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span id="cartTotal">$0</span>
+                </div>
+            </div>
+            <button class="btn btn-primary checkout-btn">Proceed to Checkout <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-body" id="modalBody">
+                <div class="modal-image">
+                    <img id="modalImg" src="" alt="Product">
+                </div>
+                <div class="modal-details">
+                    <span class="modal-brand" id="modalBrand"></span>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <div class="modal-rating" id="modalRating"></div>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <p class="modal-desc" id="modalDesc"></p>
+                    <div class="modal-country" id="modalCountry"></div>
+                    <div class="modal-quantity">
+                        <label>Quantity</label>
+                        <div class="qty-controls">
+                            <button class="qty-btn" id="qtyMinus"><i class="fas fa-minus"></i></button>
+                            <input type="number" id="qtyInput" value="1" min="1" max="10">
+                            <button class="qty-btn" id="qtyPlus"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary modal-add-btn" id="modalAddBtn"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+                    <div class="modal-features">
+                        <span><i class="fas fa-check-circle"></i> Authentic Guarantee</span>
+                        <span><i class="fas fa-check-circle"></i> Free Shipping</span>
+                        <span><i class="fas fa-check-circle"></i> 30-Day Returns</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="primeP.js"></script>
+</body>
+</html>
